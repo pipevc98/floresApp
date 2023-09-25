@@ -13,13 +13,13 @@ const routes: Routes = [
     loadChildren: () => import('./premio/premio.module').then(m => m.PremioModule)
   },
   {
+    path: '404',
+    component: NopagefoundComponent
+  },
+  {
     path:'',
     redirectTo:'flores',
     pathMatch:'full',
-  },
-  {
-    path: '404',
-    component: NopagefoundComponent
   },
 
   {

@@ -12,7 +12,7 @@ export class FloresServiceService {
 
   user = {
     name: 'Rubí Díaz',
-    perroFav: 'pirruña'
+    perroFav: 'Pirruña'
   }
 
   login ( name: string, perroFav: string ):any {
