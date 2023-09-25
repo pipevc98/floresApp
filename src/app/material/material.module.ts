@@ -19,6 +19,7 @@ import { ButtonModule } from 'primeng/button';
 
 import { CarouselModule } from 'primeng/carousel';
 import { GalleriaModule } from 'primeng/galleria';
+import { ImageModule } from 'primeng/image';
 
 
 
@@ -41,7 +42,8 @@ import { GalleriaModule } from 'primeng/galleria';
     CarouselModule,
     TagModule,
     ButtonModule,
-    GalleriaModule
+    GalleriaModule,
+    ImageModule
 
     
   ]

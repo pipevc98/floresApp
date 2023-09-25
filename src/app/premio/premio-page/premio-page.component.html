@@ -1,18 +1,42 @@
-<mat-card>
-    <div class="grid p-2">
-    
-        <div class="col-12  md:col-6">
+<div class="grid">
+    <div class="col-12 md:col-6">
+        <mat-card>
+                
             <p-galleria [value]="images" [numVisible]="3" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px' }">
                 <ng-template pTemplate="item" let-item>
                     <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
                 </ng-template>
             </p-galleria>
-        </div>
-    
-        <div class="col-12 md:col-6">
-            
-        </div>
+
+        </mat-card>
     </div>
-   
-</mat-card>
+
+    <div class="col-12 md:col-6">
+
+        <mat-card>
+
+            <mat-card-header align="center">
+                <mat-card-title class="grey">Te Amo <mat-icon>favorite</mat-icon></mat-card-title>
+            </mat-card-header>
+    
+            <img  src="https://i.pinimg.com/originals/ac/a3/b7/aca3b7fbff0f0b333d639be3d9faaba7.gif" alt="">
+
+            <mat-card-content class="mt-4 mb-4" >
+
+                <a href="https://wa.me/5213121766525">
+
+                    <button mat-button >
+                        <mat-icon >send</mat-icon>
+                        Agradece Al Creador De Esta Pagina
+                        
+                        
+                    </button>
+                </a>
+                    
+            </mat-card-content>
+
+        </mat-card>
+
+    </div>
+</div>
 
