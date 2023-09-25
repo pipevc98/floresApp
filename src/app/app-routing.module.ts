@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FloresModule } from './flores/flores.module';
 import { NopagefoundComponent } from './shared/pages/nopagefound/nopagefound.component';
 
 const routes: Routes = [
@@ -13,7 +12,11 @@ const routes: Routes = [
     path: 'premio',
     loadChildren: () => import('./premio/premio.module').then(m => m.PremioModule)
   },
- 
+  {
+    path:'',
+    redirectTo:'flores',
+    pathMatch:'full',
+  },
   {
     path: '404',
     component: NopagefoundComponent
@@ -22,7 +25,7 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: '404'
-  }
+  },
 
 
 ];
