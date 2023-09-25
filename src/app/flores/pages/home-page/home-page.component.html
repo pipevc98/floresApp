@@ -1,0 +1,46 @@
+
+<mat-card>
+
+    <mat-card-header >
+        <mat-card-title class="grey" color="grey">Bienvenida</mat-card-title>
+    </mat-card-header>
+
+   
+
+    
+    <mat-card-content class="mt-3 mb-3" align="center">
+        <img matCardImage class="max-w-20rem lg:max-w-30rem align-content-center border-round-xs " src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t39.30808-6/370172648_6479064535504256_6397800534353350478_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=5614bc&_nc_eui2=AeEL-BkdbGa33ciF5Cmr2kmyt9H8i_upSXi30fyL-6lJeF8xlkQGiKrdctYe8MAezSc&_nc_ohc=fV1BcVXSdoUAX-mZ8DF&_nc_ht=scontent.fgdl3-1.fna&oh=00_AfCZNtbnn6ISlQt4UtzjnLoL-qlAgTTi3zwBv4pQbsCxBw&oe=651547B5">
+    </mat-card-content>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="mt-3">
+
+        <form [formGroup]="myForm" (ngSubmit)="login()">
+    
+            <div class="grid p-2">
+                <div class="col-12 md:col-6 ">
+                    <mat-form-field>
+                        <mat-label>Nombre:</mat-label>
+                        <input matInput formControlName="nombre">
+                      </mat-form-field>
+                </div>
+                
+                <div class="col-12 md:col-6">
+        
+                    <mat-form-field>
+                    <mat-label>Perro Favorito</mat-label>
+                    <input matInput formControlName="perroFav">
+                    </mat-form-field>
+
+                </div>
+            </div>
+            <br>
+            
+            <button mat-button color="primary" type="submit"> Entrar <mat-icon>favorite</mat-icon> </button>
+        </form>
+
+
+    </mat-card-content>
+
+</mat-card>
