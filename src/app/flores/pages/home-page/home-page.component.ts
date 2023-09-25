@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FloresServiceService } from '../../services/flores-service.service';
-import { LowerCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-home-page',
@@ -19,8 +18,8 @@ export class HomePageComponent {
   private router = inject(Router);
 
   public myForm: FormGroup = this.fb.group({
-    nombre:    ['Rubí Díaz', [Validators.required]],
-    perroFav: ['pirruña', [Validators.required]]
+    nombre:    ['', [Validators.required]],
+    perroFav: ['', [Validators.required]]
   });
 
   
